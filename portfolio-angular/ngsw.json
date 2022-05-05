@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1651724219867,
+  "timestamp": 1651725994065,
   "index": "/portfolio-angular/index.html",
   "assetGroups": [
     {
@@ -126,7 +126,7 @@
     "/portfolio-angular/bg-masthead.244fb05c322a7852.avif": "9a2235bc7479fd12ad7c139631b90c3685a909d3",
     "/portfolio-angular/index.html": "e1fab30e0ac5a8771ef3cbd63067ce2c5842b9b3",
     "/portfolio-angular/main.84e1815f1bb51bd1.js": "5145f77ec32b725c54dd79129ecbc1a2860b8adc",
-    "/portfolio-angular/manifest.webmanifest": "84f8e19e7cb79010b37083658551e494dc83afa1",
+    "/portfolio-angular/manifest.webmanifest": "98053c4579438c02fe64411636ba011dfd9606d0",
     "/portfolio-angular/polyfills.f9d388c742834411.js": "ad6bf2a0b1e95a8b9fe4940d3459f80b2c2dd92f",
     "/portfolio-angular/runtime.a510cc70808d032b.js": "3407a001336aa2a95e6932f7187ba6b05708a7a5",
     "/portfolio-angular/styles.c668838168f8fbd8.css": "d8f2236a507932a40fbe0648b573c6031803d535"
