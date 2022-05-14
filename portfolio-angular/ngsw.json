@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1652520794799,
+  "timestamp": 1652525812211,
   "index": "/portfolio-angular/index.html",
   "assetGroups": [
     {
@@ -16,7 +16,7 @@
         "/portfolio-angular/manifest.webmanifest",
         "/portfolio-angular/polyfills.f9d388c742834411.js",
         "/portfolio-angular/runtime.a510cc70808d032b.js",
-        "/portfolio-angular/styles.eb2b8410d08a1dd6.css"
+        "/portfolio-angular/styles.267f26cc6a1d6230.css"
       ],
       "patterns": []
     },
@@ -124,12 +124,12 @@
     "/portfolio-angular/assets/img/portfolio/thumbnails/6.avif": "2ab6ee986204ed2119f9b4986c03327dcf33bc43",
     "/portfolio-angular/assets/img/portfolio/thumbnails/6.jpg": "3eeeed59320dff63adde7a35764a84e67bcb3610",
     "/portfolio-angular/bg-masthead.244fb05c322a7852.avif": "9a2235bc7479fd12ad7c139631b90c3685a909d3",
-    "/portfolio-angular/index.html": "98d06500b85d285f93bacd331b64861b7e463f83",
+    "/portfolio-angular/index.html": "f4cb717ebac2830eaf6b07e4a15b434af3d06509",
     "/portfolio-angular/main.748baaed4274247b.js": "c817f9cf0e44864d07cdf53ba362ef4ecbb7a962",
     "/portfolio-angular/manifest.webmanifest": "98053c4579438c02fe64411636ba011dfd9606d0",
     "/portfolio-angular/polyfills.f9d388c742834411.js": "ad6bf2a0b1e95a8b9fe4940d3459f80b2c2dd92f",
     "/portfolio-angular/runtime.a510cc70808d032b.js": "3407a001336aa2a95e6932f7187ba6b05708a7a5",
-    "/portfolio-angular/styles.eb2b8410d08a1dd6.css": "584fe54c60bba039bbc3c07807b3ee129ed3e854"
+    "/portfolio-angular/styles.267f26cc6a1d6230.css": "bebcefeb867746616770f3f230056fa162a4dac0"
   },
   "navigationUrls": [
     {
