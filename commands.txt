@@ -1,0 +1,5 @@
+--require to install npm install -g http-server
+
+ng new workspace --directory ./
+
+ng build --configuration=production
