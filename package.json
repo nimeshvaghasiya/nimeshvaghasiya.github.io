@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "start": "ng serve && tar -zcvf archive.tar.gz docs/*",
+    "build": "ng build --configuration=production && tar -zcvf archive.tar.gz docs/*",
+    "watch": "ng build --watch --configuration=production && tar -zcvf archive.tar.gz docs/*",
     "test": "ng test"
   },
   "private": true,
