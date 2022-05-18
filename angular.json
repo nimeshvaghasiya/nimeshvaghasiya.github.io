@@ -28,7 +28,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "src/projects_prod/portfolio-angular/",
+                "output": "/portfolio-angular/"
+              }
             ],
             "styles": [
               "src/styles.scss"
