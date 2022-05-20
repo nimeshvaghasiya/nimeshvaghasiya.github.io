@@ -10,3 +10,9 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init
 // Follow at 
 https://tailwindcss.com/docs/guides/angular
+
+
+-- Icon & splash screen Generator
+npm install --global pwa-asset-generator
+-- One-off execution
+npx pwa-asset-generator
