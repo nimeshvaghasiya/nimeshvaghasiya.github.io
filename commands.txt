@@ -2,6 +2,7 @@
 
 ng new workspace --directory ./
 
+ng serve --configuration=production
 ng build --configuration=production
 
 

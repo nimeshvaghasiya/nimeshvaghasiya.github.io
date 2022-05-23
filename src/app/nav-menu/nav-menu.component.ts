@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-menu.component.scss']
 })
 export class NavMenuComponent implements OnInit {
+  isShownUserMenu: boolean = false ;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  toggleUserMenuShow() { this.isShownUserMenu = ! this.isShownUserMenu; }
 
 }
