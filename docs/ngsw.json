@@ -1,0 +1,153 @@
+{
+  "configVersion": 1,
+  "timestamp": 1653738041140,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.f3736201782efb62.js",
+        "/manifest.webmanifest",
+        "/polyfills.2abf27fa2e0d32ee.js",
+        "/runtime.b96449eac0208363.js",
+        "/styles.2a62294f7bdf25b1.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/apple-icon-180.png",
+        "/assets/icons/apple-splash-1125-2436.jpg",
+        "/assets/icons/apple-splash-1136-640.jpg",
+        "/assets/icons/apple-splash-1170-2532.jpg",
+        "/assets/icons/apple-splash-1242-2208.jpg",
+        "/assets/icons/apple-splash-1242-2688.jpg",
+        "/assets/icons/apple-splash-1284-2778.jpg",
+        "/assets/icons/apple-splash-1334-750.jpg",
+        "/assets/icons/apple-splash-1536-2048.jpg",
+        "/assets/icons/apple-splash-1620-2160.jpg",
+        "/assets/icons/apple-splash-1668-2224.jpg",
+        "/assets/icons/apple-splash-1668-2388.jpg",
+        "/assets/icons/apple-splash-1792-828.jpg",
+        "/assets/icons/apple-splash-2048-1536.jpg",
+        "/assets/icons/apple-splash-2048-2732.jpg",
+        "/assets/icons/apple-splash-2160-1620.jpg",
+        "/assets/icons/apple-splash-2208-1242.jpg",
+        "/assets/icons/apple-splash-2224-1668.jpg",
+        "/assets/icons/apple-splash-2388-1668.jpg",
+        "/assets/icons/apple-splash-2436-1125.jpg",
+        "/assets/icons/apple-splash-2532-1170.jpg",
+        "/assets/icons/apple-splash-2688-1242.jpg",
+        "/assets/icons/apple-splash-2732-2048.jpg",
+        "/assets/icons/apple-splash-2778-1284.jpg",
+        "/assets/icons/apple-splash-640-1136.jpg",
+        "/assets/icons/apple-splash-750-1334.jpg",
+        "/assets/icons/apple-splash-828-1792.jpg",
+        "/assets/icons/favicon-196.png",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/icons/manifest-icon-192.maskable.png",
+        "/assets/icons/manifest-icon-512.maskable.png",
+        "/assets/logo-dark.png",
+        "/assets/logo-dark.svg",
+        "/assets/logo-light.png",
+        "/assets/logo-light.svg",
+        "/assets/logo.svg",
+        "/logo.92d1ffc829c688f7.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/icons/apple-icon-180.png": "4dd58981706039f9ccad131cbce315f0cfc5e939",
+    "/assets/icons/apple-splash-1125-2436.jpg": "cc50988397d1698f5b46a783f54410d20c45202a",
+    "/assets/icons/apple-splash-1136-640.jpg": "327005225f021622b443f17b61ef305adb04ec7c",
+    "/assets/icons/apple-splash-1170-2532.jpg": "abb6828789b03a2e70e75b0a0d90213389461019",
+    "/assets/icons/apple-splash-1242-2208.jpg": "a63e1923701e6fd47dc457614216dfb4a00a8b87",
+    "/assets/icons/apple-splash-1242-2688.jpg": "a554c2db8c2eafb3077c0c4e0ac3c1617767da6c",
+    "/assets/icons/apple-splash-1284-2778.jpg": "a4fd34ddde5eebd811595485bd29ea34ad3d0be1",
+    "/assets/icons/apple-splash-1334-750.jpg": "09c87e5cd911dda59614c43b4d48cc34b7cf9520",
+    "/assets/icons/apple-splash-1536-2048.jpg": "a97d1d3458549d340949d6e1d007404e28109fe7",
+    "/assets/icons/apple-splash-1620-2160.jpg": "525c7fa4b6703a644bf74fa52a79d9f6dfd678f1",
+    "/assets/icons/apple-splash-1668-2224.jpg": "7228dc9496844223751afa7ae19bfbf37f447fef",
+    "/assets/icons/apple-splash-1668-2388.jpg": "0f7ec9890876d50244463ecf25513b80f9cfcb4a",
+    "/assets/icons/apple-splash-1792-828.jpg": "1a562c66d2125e7eab253ddc34614998bdccd28a",
+    "/assets/icons/apple-splash-2048-1536.jpg": "f76d2dd3d9139b469d45b2ecc99e84eec066dbf0",
+    "/assets/icons/apple-splash-2048-2732.jpg": "f642833d22cacc3b35b06c0b55f2b1b3b42e136b",
+    "/assets/icons/apple-splash-2160-1620.jpg": "d3686dbd608a0ec7dc22a38febcc33f5d935997a",
+    "/assets/icons/apple-splash-2208-1242.jpg": "422e1bf3f3ed92adb4941cd36815b2f1c4097424",
+    "/assets/icons/apple-splash-2224-1668.jpg": "5082c955b4fe83de21b8962450b282adfe416a0e",
+    "/assets/icons/apple-splash-2388-1668.jpg": "6dcf8103d0983f5e88a2b03d0f75292288fc6748",
+    "/assets/icons/apple-splash-2436-1125.jpg": "0e6496fa7664ccbda52b7a30761b6cbe809a245b",
+    "/assets/icons/apple-splash-2532-1170.jpg": "2746c2d7c9566f901b19d415e00c4387e544a7e2",
+    "/assets/icons/apple-splash-2688-1242.jpg": "bf1cb17231a4cdda1493baf7628b4360bcb544dc",
+    "/assets/icons/apple-splash-2732-2048.jpg": "a4444c971d21c2f5d2c2b754b68bb380b3d674dc",
+    "/assets/icons/apple-splash-2778-1284.jpg": "4423dd875303896c012edcd9ba65b4b883c1da57",
+    "/assets/icons/apple-splash-640-1136.jpg": "501b9282a3671b9170425ec658e7516638dab583",
+    "/assets/icons/apple-splash-750-1334.jpg": "559a133b689e94254738f48cee93b781e0c6432f",
+    "/assets/icons/apple-splash-828-1792.jpg": "348d472184fca57518660784a43470cc9f654e45",
+    "/assets/icons/favicon-196.png": "8f54da09a82488410719c07037b881153414c0ea",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/icons/manifest-icon-192.maskable.png": "f4523be663225d979dc89c7b15ad54539f39373a",
+    "/assets/icons/manifest-icon-512.maskable.png": "1637772de945a515cfffc4cb8a7920788db2ce86",
+    "/assets/logo-dark.png": "aedfbb867b16d6ae6b835e85acab4f43b29514e1",
+    "/assets/logo-dark.svg": "e64112823ad60788f34bd0cb5325079b87c3ec27",
+    "/assets/logo-light.png": "e27b6839e4845bc95816981ff058895498744778",
+    "/assets/logo-light.svg": "c1649ae1f59b16649f9a7d4a0f5cbb5a45dfceaa",
+    "/assets/logo.svg": "29374cad312c6a37bbf7a0f5c65b1577ed13bc95",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "1fc29faf06e00336d5d72bddf75cf3cce692b5e8",
+    "/logo.92d1ffc829c688f7.svg": "29374cad312c6a37bbf7a0f5c65b1577ed13bc95",
+    "/main.f3736201782efb62.js": "454dbc2fed2a871dfc9557eab13ae7107e69d78d",
+    "/manifest.webmanifest": "9db2c20c7b8d04b4092c96fc86ad4a0a1f5e0819",
+    "/polyfills.2abf27fa2e0d32ee.js": "e14048bad494892463eb2ffd93c27d218e1b7c18",
+    "/runtime.b96449eac0208363.js": "a63dd7e2731830d0a3ec77e97400d1d4241fdb29",
+    "/styles.2a62294f7bdf25b1.css": "b477c4e08eb0bedaa93ab49235f30a80692f6a4f"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
