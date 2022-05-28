@@ -55,9 +55,6 @@ jobs:
         run: |
           npm run build --configuration=production
           tar -zcvf archive.tar.gz dist/*
-      - name: Lint
-        run: |
-          npm run lint
       - name: Test
         run: |
           npm run test --configuration=production
