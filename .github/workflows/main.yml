@@ -54,10 +54,7 @@ jobs:
       - name: Build
         run: |
           npm run build --configuration=production
-          tar -zcvf archive.tar.gz docs/*
-      - name: Test
-        run: |
-          npm run test --configuration=production
+          tar -zcvf archive.tar.gz dist/*
       - name: Conventional Changelog Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
