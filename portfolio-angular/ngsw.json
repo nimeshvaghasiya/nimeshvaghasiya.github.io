@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1653022730604,
+  "timestamp": 1653732394783,
   "index": "/portfolio-angular/index.html",
   "assetGroups": [
     {
@@ -12,11 +12,11 @@
       },
       "urls": [
         "/portfolio-angular/index.html",
-        "/portfolio-angular/main.7125625dbe5c20b4.js",
+        "/portfolio-angular/main.6d157cd49790d83e.js",
         "/portfolio-angular/manifest.webmanifest",
         "/portfolio-angular/polyfills.f9d388c742834411.js",
         "/portfolio-angular/runtime.a510cc70808d032b.js",
-        "/portfolio-angular/styles.eb2b8410d08a1dd6.css"
+        "/portfolio-angular/styles.bd6dd406665d6321.css"
       ],
       "patterns": []
     },
@@ -186,12 +186,12 @@
     "/portfolio-angular/assets/img/portfolio/thumbnails/6.jpg": "3eeeed59320dff63adde7a35764a84e67bcb3610",
     "/portfolio-angular/assets/nature.svg": "49682be43e929919e2a4b266a6c3a52d8d065a46",
     "/portfolio-angular/bg-masthead.244fb05c322a7852.avif": "9a2235bc7479fd12ad7c139631b90c3685a909d3",
-    "/portfolio-angular/index.html": "2b5eb5b7065179d3a19cfc7086711df821dcda47",
-    "/portfolio-angular/main.7125625dbe5c20b4.js": "7b884bed3c457425c70007a46bb46da795044887",
+    "/portfolio-angular/index.html": "3087486e442c9cd2ff7860e547e5c67c91336069",
+    "/portfolio-angular/main.6d157cd49790d83e.js": "ed7e413f819248d24b1e8cf0bbf70ddd464f57ff",
     "/portfolio-angular/manifest.webmanifest": "b5ce57b4141ae402d6ddd30688afd386f0ea8b37",
     "/portfolio-angular/polyfills.f9d388c742834411.js": "ad6bf2a0b1e95a8b9fe4940d3459f80b2c2dd92f",
     "/portfolio-angular/runtime.a510cc70808d032b.js": "3407a001336aa2a95e6932f7187ba6b05708a7a5",
-    "/portfolio-angular/styles.eb2b8410d08a1dd6.css": "584fe54c60bba039bbc3c07807b3ee129ed3e854"
+    "/portfolio-angular/styles.bd6dd406665d6321.css": "84e1265e1e0f0dcaf2811dc34b8e5f888b7537c6"
   },
   "navigationUrls": [
     {
