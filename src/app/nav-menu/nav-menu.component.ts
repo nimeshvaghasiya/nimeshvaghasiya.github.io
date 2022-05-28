@@ -7,12 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavMenuComponent implements OnInit {
   isShownUserMenu: boolean = false ;
-
+  isExpanded = false;
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  collapse() {
+    this.isExpanded = false;
+  }
+
+  toggle() {
+    this.isExpanded = !this.isExpanded;
+  }
+  
   toggleUserMenuShow() { this.isShownUserMenu = ! this.isShownUserMenu; }
 
 }
