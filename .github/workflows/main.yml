@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 713ef89614992305b7dc3f2e4c16abab1cbae1cf
 # This is a basic workflow to help you get started with Actions
 
 name: CI and CD
@@ -80,4 +84,8 @@ jobs:
 
       - name: Deploy
         run: |
+<<<<<<< HEAD
           npm run deploy
+=======
+          npm run deploy
+>>>>>>> 713ef89614992305b7dc3f2e4c16abab1cbae1cf
