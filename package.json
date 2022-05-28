@@ -6,7 +6,9 @@
     "start": "ng serve && tar -zcvf archive.tar.gz docs/*",
     "build": "ng build --configuration=production && tar -zcvf archive.tar.gz docs/*",
     "watch": "ng build --watch --configuration=production && tar -zcvf archive.tar.gz docs/*",
-    "test": "ng test"
+    "test": "ng test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d docs"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +31,7 @@
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "autoprefixer": "^10.4.7",
+    "gh-pages": "^4.0.0",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
