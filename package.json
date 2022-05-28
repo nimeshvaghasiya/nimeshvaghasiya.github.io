@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve && tar -zcvf archive.tar.gz docs/*",
-    "build": "ng build --configuration=production && tar -zcvf archive.tar.gz docs/*",
-    "watch": "ng build --watch --configuration=production && tar -zcvf archive.tar.gz docs/*",
+    "start": "ng serve && tar -zcvf archive.tar.gz dist/*",
+    "build": "ng build --configuration=production && tar -zcvf archive.tar.gz dist/*",
+    "watch": "ng build --watch --configuration=production && tar -zcvf archive.tar.gz dist/*",
     "test": "ng test",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d docs"
+    "deploy": "gh-pages -d dist"
   },
   "private": true,
   "dependencies": {

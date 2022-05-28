@@ -17,3 +17,19 @@ https://tailwindcss.com/docs/guides/angular
 npm install --global pwa-asset-generator
 -- One-off execution
 npx pwa-asset-generator
+
+
+-- GIT HUB Pages CI/CD
+
+1: This will create a gh-pages branch, copy over all files from the base path, commit all changes and push to the origin remote.
+npm install gh-pages --save-dev
+
+2: Add properties to package.json file, in the existing script property you need to add predeploy and deploy
+"scripts": {
+  // ...
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+
+3: Now deploy it to Github pages
+npm run deploy
