@@ -31,5 +31,7 @@ npm install gh-pages --save-dev
   "deploy": "gh-pages -d docs"
 }
 
-3: Now deploy it to Github pages
+3: Go to Settings > Pages > Source > select branch gh-pages and root folder.
+
+4: Now deploy it to Github pages
 npm run deploy
