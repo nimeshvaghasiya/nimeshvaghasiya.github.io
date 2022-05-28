@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration=production && tar -zcvf archive.tar.gz dist/*",
     "test": "ng test",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint.js"
   },
   "private": true,
   "dependencies": {
