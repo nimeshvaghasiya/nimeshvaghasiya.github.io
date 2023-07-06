@@ -29,16 +29,6 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              {
-                "glob": "**/*",
-                "input": "src/projects_prod/angular/company-pwa/",
-                "output": "/company-pwa/"
-              },
-              {
-                "glob": "**/*",
-                "input": "src/projects_prod/nextjs/next-app/",
-                "output": "/next-app/"
-              },
               "src/manifest.webmanifest"
             ],
             "styles": [
