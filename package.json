@@ -7,7 +7,7 @@
     "build": "ng build --configuration=production && tar -zcvf archive.tar.gz docs/*",
     "watch": "ng build --watch --configuration=production && tar -zcvf archive.tar.gz docs/*",
     "test": "ng test",
-    "predeploy": "npm run build",
+    "predeploy": "pnpm run build",
     "deploy": "gh-pages -d docs",
     "lint": "eslint.js"
   },
