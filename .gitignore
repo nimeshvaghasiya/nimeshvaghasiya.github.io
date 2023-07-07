@@ -40,7 +40,3 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
-
-# All Other Sub Projects need hosting to github page
-# Copy all project production build as assets to github project page
-/src/projects_prod

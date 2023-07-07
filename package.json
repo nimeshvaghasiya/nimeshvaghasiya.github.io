@@ -1,11 +1,11 @@
 {
-  "name": "workspace",
+  "name": "nimeshvaghasiya.github.io",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve && tar -zcvf archive.tar.gz docs/*",
-    "build": "ng build --configuration=production && tar -zcvf archive.tar.gz docs/*",
-    "watch": "ng build --watch --configuration=production && tar -zcvf archive.tar.gz docs/*",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration production",
     "test": "ng test",
     "predeploy": "pnpm run build",
     "deploy": "gh-pages -d docs",
@@ -22,9 +22,9 @@
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
     "@angular/service-worker": "^16.1.0",
-    "rxjs": "~7.5.0",
+    "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.13.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.1.3",
