@@ -15,7 +15,7 @@ ng add @angular/pwa
 -- Tailwind setup
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init
-// Follow at 
+// Follow at
 https://tailwindcss.com/docs/guides/angular
 
 
@@ -34,10 +34,11 @@ npm install gh-pages --save-dev
 "scripts": {
   // ...
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d docs"
+  "deploy": "gh-pages -d dist"
 }
 
 3: Go to Settings > Pages > Source > select branch gh-pages and root folder.
 
-4: Now deploy it to Github pages
-npm run deploy
+4: Now deploy it to Github pages gh-pages branch
+pnpm run build or pnpm run predeploy
+pnpm run deploy
