@@ -3,13 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve && tar -zcvf archive.tar.gz dist/*",
-    "build": "ng build --configuration=production && tar -zcvf archive.tar.gz dist/*",
-    "watch": "ng build --watch --configuration=production && tar -zcvf archive.tar.gz dist/*",
-    "test": "ng test",
-    "predeploy": "pnpm run build",
+    "start": "python -m http.server 4321",
+    "dev": "python -m http.server 4321",
+    "build": "node -e \"const fs=require('fs'); ['dist','dist/css','dist/js'].forEach(d=>!fs.existsSync(d)&&fs.mkdirSync(d,{recursive:true})); fs.copyFileSync('index.html','dist/index.html'); fs.copyFileSync('css/style.css','dist/css/style.css'); fs.copyFileSync('js/app.js','dist/js/app.js'); fs.cpSync('assets','dist/assets',{recursive:true});\" && tar -zcvf archive.tar.gz dist/*",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "lint": "eslint.js"
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "private": true,
   "dependencies": {

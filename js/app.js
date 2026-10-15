@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNeuralCanvas();
   initHeaderScroll();
   initArchitectureTabs();
+  initTopologyVisualizer();
   initProjectFilters();
   initTerminal();
   initGitHubStats();
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBlueprintModals();
   initThemeToggle();
   initMobileNav();
+  initAIAssistant();
 });
 
 /* ==========================================================================
@@ -572,4 +574,178 @@ function initMobileNav() {
       navLinks.classList.remove('open');
     });
   });
+}
+
+/* ==========================================================================
+   11. Interactive System Topology Visualizer
+   ========================================================================== */
+const TOPOLOGY_SPECS = {
+  ingest: {
+    title: 'Traffic & Webhook Ingestion Gateways',
+    tech: 'Cloudflare Edge • Amazon SP-API • POS Webhooks',
+    metric: 'Throughput: 14,500 req/min • P95: 18ms',
+    desc: 'Ingests external order captures, inventory adjustments, and catalog updates with HMAC signature verification, TLS termination, and dead-letter queue buffering.'
+  },
+  router: {
+    title: 'Multi-Tenant Dynamic Scoping Router',
+    tech: 'Laravel 12 • Stancl Tenancy v3 • Sanctum Auth',
+    metric: 'Routing Latency: 4ms • 100% Tenant Isolation',
+    desc: 'Dynamically resolves tenant context from subdomains and custom headers. Applies automated Eloquent tenancy scopes ensuring zero cross-tenant data leakage.'
+  },
+  compute: {
+    title: 'Asynchronous Workflow & Processing Clusters',
+    tech: 'n8n Orchestration • Redis Horizon • Python Engines',
+    metric: 'Active Workers: 32 • Failed Jobs: 0.001%',
+    desc: 'Distributes long-running jobs across dedicated queues: inventory rebalancing, invoice PDF rendering, price recalculations, and trading strategy tick evaluations.'
+  },
+  storage: {
+    title: 'Multi-Tenant Core Storage & Product Catalog',
+    tech: 'PostgreSQL 16 • Directus BaaS • Pimcore MDM',
+    metric: 'SKU Count: 50,000+ • Read Latency: 12ms',
+    desc: 'Central single-database repository storing multi-brand product taxonomies, order ledgers, and tenant metadata with JSONB attributes and read replicas.'
+  },
+  lake: {
+    title: 'Distributed ETL & Business Intelligence Lake',
+    tech: 'Airbyte on Kubernetes • Metabase BI • PostgREST',
+    metric: 'Sync Interval: Real-time CDC • Uptime: 99.98%',
+    desc: 'High-throughput data replication cluster deployed on Kubernetes streaming sales analytics into Metabase BI executive dashboards and real-time reporting APIs.'
+  }
+};
+
+function initTopologyVisualizer() {
+  const nodes = document.querySelectorAll('.topology-node');
+  const titleEl = document.getElementById('inspector-title');
+  const techEl = document.getElementById('inspector-tech');
+  const metricEl = document.getElementById('inspector-metric');
+  const descEl = document.getElementById('inspector-desc');
+
+  if (!nodes.length || !titleEl) return;
+
+  nodes.forEach((node) => {
+    node.addEventListener('click', () => {
+      nodes.forEach((n) => n.classList.remove('selected'));
+      node.classList.add('selected');
+
+      const key = node.getAttribute('data-node');
+      const data = TOPOLOGY_SPECS[key];
+      if (data) {
+        titleEl.textContent = data.title;
+        techEl.textContent = data.tech;
+        metricEl.textContent = data.metric;
+        descEl.textContent = data.desc;
+      }
+    });
+  });
+}
+
+/* ==========================================================================
+   12. Floating AI Digital Twin ("Ask Nimesh's AI Agent")
+   ========================================================================== */
+function initAIAssistant() {
+  const toggleBtn = document.getElementById('ai-assistant-toggle');
+  const drawer = document.getElementById('ai-chat-drawer');
+  const closeBtn = document.getElementById('ai-chat-close-btn');
+  const sendBtn = document.getElementById('ai-chat-send-btn');
+  const inputEl = document.getElementById('ai-chat-input');
+  const bodyEl = document.getElementById('ai-chat-body');
+  const promptChips = document.querySelectorAll('.chat-prompt-chip');
+
+  if (!toggleBtn || !drawer || !inputEl || !bodyEl) return;
+
+  toggleBtn.addEventListener('click', () => {
+    drawer.classList.toggle('open');
+    if (drawer.classList.contains('open')) {
+      inputEl.focus();
+    }
+  });
+
+  closeBtn.addEventListener('click', () => {
+    drawer.classList.remove('open');
+  });
+
+  promptChips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      const q = chip.getAttribute('data-prompt');
+      if (q) {
+        handleUserMessage(q);
+      }
+    });
+  });
+
+  sendBtn.addEventListener('click', () => {
+    const text = inputEl.value.trim();
+    if (text) {
+      inputEl.value = '';
+      handleUserMessage(text);
+    }
+  });
+
+  inputEl.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      const text = inputEl.value.trim();
+      if (text) {
+        inputEl.value = '';
+        handleUserMessage(text);
+      }
+    }
+  });
+
+  function handleUserMessage(query) {
+    appendMessage(query, 'user');
+
+    // Show simulated typing indicator
+    const typingIndicator = document.createElement('div');
+    typingIndicator.className = 'chat-bubble chat-bubble-agent';
+    typingIndicator.innerHTML = '<span style="color:var(--accent-cyan); font-family:var(--font-mono);">Thinking & retrieving architecture context...</span>';
+    bodyEl.appendChild(typingIndicator);
+    bodyEl.scrollTop = bodyEl.scrollHeight;
+
+    setTimeout(() => {
+      bodyEl.removeChild(typingIndicator);
+      const reply = generateAgentReply(query);
+      appendMessage(reply, 'agent');
+    }, 600);
+  }
+
+  function appendMessage(text, sender) {
+    const bubble = document.createElement('div');
+    bubble.className = `chat-bubble chat-bubble-${sender}`;
+    bubble.innerHTML = text;
+    bodyEl.appendChild(bubble);
+    bodyEl.scrollTop = bodyEl.scrollHeight;
+  }
+
+  function generateAgentReply(rawQuery) {
+    const q = rawQuery.toLowerCase();
+
+    if (q.includes('tenan') || q.includes('multi-tenant') || q.includes('laravel') || q.includes('database')) {
+      return `<strong>Multi-Tenancy Architecture:</strong><br>
+Nimesh engineered a single-database multi-tenant retail platform using <strong>Laravel 12</strong> and <strong>Stancl Tenancy v3</strong>. Rather than running costly database-per-tenant infrastructure, this model isolates data using automated Eloquent tenant query scopes, sub-100ms response latencies, and unified administrative control via <strong>Filament v3</strong> and <strong>Inertia 2 + React</strong>. High-volume jobs run seamlessly through a <strong>Redis + Horizon</strong> cluster.`;
+    }
+
+    if (q.includes('trading') || q.includes('quant') || q.includes('algo') || q.includes('bot')) {
+      return `<strong>Algorithmic Trading & Autonomous Engines:</strong><br>
+Nimesh built quantitative trading systems (TradingBot v1 & v2) in <strong>Python</strong> running inside production Docker containers. Key architectural highlights include real-time WebSocket tick ingestion, asynchronous event loops, automated strategy execution, and automated risk guards with max-drawdown circuit breakers.`;
+    }
+
+    if (q.includes('n8n') || q.includes('etl') || q.includes('airbyte') || q.includes('workflow') || q.includes('integration')) {
+      return `<strong>Enterprise Integration & ETL Ecosystem:</strong><br>
+Nimesh architected a distributed automation hub managing over <strong>100+ production n8n workflows</strong> connecting Amazon Selling Partner API (SP-API), Lightspeed POS, and accounting ERPs. He also operates an <strong>Airbyte cluster on DigitalOcean Kubernetes</strong> for high-throughput data replication into analytics warehouses.`;
+    }
+
+    if (q.includes('ai') || q.includes('mcp') || q.includes('agent') || q.includes('llm')) {
+      return `<strong>Autonomous AI & MCP Architecture:</strong><br>
+Nimesh specializes in AI agent engineering, utilizing the <strong>Model Context Protocol (MCP)</strong> to allow LLMs (Claude, OpenAI) to perform deterministic codebase reasoning, execute verified unit tests, and safely query live system metrics through JSON-RPC and structured OpenAPI interfaces.`;
+    }
+
+    if (q.includes('hire') || q.includes('contact') || q.includes('email') || q.includes('role') || q.includes('job') || q.includes('available')) {
+      return `<strong>Engagement & Availability:</strong><br>
+Nimesh is currently available for <strong>Principal / Staff Solutions Architecture roles</strong>, enterprise SaaS advisory, and high-impact distributed systems consulting.<br><br>
+You can reach him directly at: <a href="mailto:nimesh.vaghasiya95@live.com" style="color:var(--accent-cyan); text-decoration:underline;">nimesh.vaghasiya95@live.com</a> or connect on <a href="https://github.com/nimeshvaghasiya" target="_blank" style="color:var(--accent-cyan); text-decoration:underline;">GitHub (184+ Repos)</a>.`;
+    }
+
+    return `<strong>System Architecture Summary:</strong><br>
+Nimesh Vaghasiya is a Principal Full-Stack Engineer & Cloud Solutions Architect with 10+ years of experience engineering multi-tenant platforms (Laravel 12, Stancl, Inertia React), autonomous AI agents & algorithmic trading bots (Python, Docker, MCP), and distributed ETL hubs (100+ n8n workflows, Airbyte on K8s).<br><br>
+Feel free to ask about his <em>multi-tenant platform</em>, <em>trading bots</em>, <em>ETL pipelines</em>, or <em>how to get in touch</em>!`;
+  }
 }
