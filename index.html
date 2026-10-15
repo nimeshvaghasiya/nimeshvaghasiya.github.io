@@ -589,6 +589,79 @@
             </div>
           </div>
         </div>
+
+        <!-- Interactive Systems Topology Map -->
+        <div class="topology-section-wrapper">
+          <div class="topology-header">
+            <div class="topology-title">
+              <span>🌐</span>
+              <span style="font-weight:700;">Distributed Enterprise Topology & Live Data Flow</span>
+            </div>
+            <div class="topology-status-tag">
+              <span class="status-dot"></span>
+              <span>Live Mesh Active</span>
+            </div>
+          </div>
+
+          <div class="topology-flow-grid">
+            <!-- Node 1 -->
+            <div class="topology-node selected" data-node="ingest">
+              <div class="topology-node-icon">⚡</div>
+              <div class="topology-node-name">1. Ingest Gateways</div>
+              <div class="topology-node-tech">Cloudflare • Webhooks</div>
+              <div class="topology-node-metric">14.5k req/min</div>
+            </div>
+
+            <!-- Node 2 -->
+            <div class="topology-node" data-node="router">
+              <div class="topology-node-icon">🏢</div>
+              <div class="topology-node-name">2. Multi-Tenant Core</div>
+              <div class="topology-node-tech">Laravel 12 • Stancl</div>
+              <div class="topology-node-metric">&lt; 4ms Scoping</div>
+            </div>
+
+            <!-- Node 3 -->
+            <div class="topology-node" data-node="compute">
+              <div class="topology-node-icon">🔄</div>
+              <div class="topology-node-name">3. Queue & Automation</div>
+              <div class="topology-node-tech">n8n • Redis Horizon</div>
+              <div class="topology-node-metric">32 Workers</div>
+            </div>
+
+            <!-- Node 4 -->
+            <div class="topology-node" data-node="storage">
+              <div class="topology-node-icon">🗄️</div>
+              <div class="topology-node-name">4. Data & PIM/MDM</div>
+              <div class="topology-node-tech">PostgreSQL • Directus</div>
+              <div class="topology-node-metric">50k+ SKUs</div>
+            </div>
+
+            <!-- Node 5 -->
+            <div class="topology-node" data-node="lake">
+              <div class="topology-node-icon">📊</div>
+              <div class="topology-node-name">5. Analytics & BI</div>
+              <div class="topology-node-tech">Airbyte • Metabase</div>
+              <div class="topology-node-metric">99.98% Uptime</div>
+            </div>
+          </div>
+
+          <!-- Live Topology Inspector -->
+          <div class="topology-inspector">
+            <div class="inspector-meta">
+              <span style="font-size:1.2rem;">🔍</span>
+              <div>
+                <h4 id="inspector-title" style="font-size:0.95rem; color:var(--text-primary);">Traffic & Webhook Ingestion Gateways</h4>
+                <div id="inspector-tech" style="font-size:0.75rem; color:var(--accent-cyan); font-family:var(--font-mono);">Cloudflare Edge • Amazon SP-API • POS Webhooks</div>
+              </div>
+            </div>
+            <div id="inspector-desc" class="inspector-desc">
+              Ingests external order captures, inventory adjustments, and catalog updates with HMAC signature verification, TLS termination, and dead-letter queue buffering.
+            </div>
+            <div id="inspector-metric" style="font-family:var(--font-mono); font-size:0.78rem; color:var(--accent-emerald-light); font-weight:700;">
+              Throughput: 14,500 req/min • P95: 18ms
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1218,6 +1291,52 @@
       <polyline points="20 6 9 17 4 12"></polyline>
     </svg>
     <span id="toast-message">Notification</span>
+  </div>
+
+  <!-- Floating AI Digital Twin ("Ask Nimesh's AI Agent") -->
+  <button class="ai-assistant-toggle" id="ai-assistant-toggle" aria-label="Open AI Assistant" title="Ask Nimesh's Digital Twin">
+    <span class="ai-assistant-orb"></span>
+    <span>Ask Nimesh's AI Agent</span>
+  </button>
+
+  <!-- AI Chat Drawer -->
+  <div class="ai-chat-drawer" id="ai-chat-drawer">
+    <div class="ai-chat-header">
+      <div class="ai-chat-title-group">
+        <img src="https://avatars.githubusercontent.com/u/6048622?v=4" alt="Nimesh AI" class="ai-chat-avatar">
+        <div>
+          <div class="ai-chat-name">Nimesh's AI Agent</div>
+          <div class="ai-chat-sub">Architecture & Systems Twin</div>
+        </div>
+      </div>
+      <button class="ai-chat-close-btn" id="ai-chat-close-btn" aria-label="Close Chat">✕</button>
+    </div>
+
+    <div class="ai-chat-body" id="ai-chat-body">
+      <div class="chat-bubble chat-bubble-agent">
+        Hello! I'm Nimesh Vaghasiya's AI architectural agent. Ask me anything about his <strong>multi-tenant platform</strong>, <strong>algorithmic trading bots</strong>, <strong>100+ n8n workflows</strong>, or technical proficiencies.
+      </div>
+    </div>
+
+    <!-- Suggested Prompt Chips -->
+    <div class="ai-chat-prompt-chips">
+      <button class="chat-prompt-chip" data-prompt="Explain your multi-tenancy architecture">Multi-Tenancy Core</button>
+      <button class="chat-prompt-chip" data-prompt="How do your algorithmic trading bots work?">Algo Trading Bots</button>
+      <button class="chat-prompt-chip" data-prompt="Tell me about your n8n and Airbyte ETL workflows">n8n & ETL Hub</button>
+      <button class="chat-prompt-chip" data-prompt="What AI and MCP protocols do you build?">AI & MCP</button>
+      <button class="chat-prompt-chip" data-prompt="How can I contact or hire you?">Contact / Hire</button>
+    </div>
+
+    <!-- Input Bar -->
+    <div class="ai-chat-input-bar">
+      <input type="text" id="ai-chat-input" class="ai-chat-input" placeholder="Ask about systems, stack, or experience..." autocomplete="off">
+      <button id="ai-chat-send-btn" class="ai-chat-send-btn" aria-label="Send message">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
   </div>
 
   <!-- Application Logic -->
