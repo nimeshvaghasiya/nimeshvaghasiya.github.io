@@ -197,24 +197,32 @@ function initTerminal() {
   const COMMANDS = {
     help: `Available commands:
   <span class="terminal-cmd">skills</span>       - High-level overview of core proficiencies
+  <span class="terminal-cmd">ai-workflow</span>  - 100% AI-driven engineering methodology (zero manual coding)
   <span class="terminal-cmd">projects</span>     - Key architecture implementations
   <span class="terminal-cmd">stack</span>        - Detailed technical arsenal
-  <span class="terminal-cmd">stats</span>        - Real-time GitHub and system metrics
+  <span class="terminal-cmd">stats</span>        - Real-time engineering and system metrics
   <span class="terminal-cmd">whoami</span>       - Architectural summary and engineering focus
   <span class="terminal-cmd">contact</span>      - Direct communication channels
   <span class="terminal-cmd">hire</span>         - Consulting and engineering engagement info
   <span class="terminal-cmd">clear</span>        - Clear terminal screen`,
 
     whoami: `Nimesh Vaghasiya
-Principal Full-Stack Engineer & AI / Cloud Solutions Architect
-10+ years architecting resilient multi-tenant SaaS platforms, enterprise workflow automation hubs, quantitative trading systems, and modern web applications across global clients.`,
+Principal Full-Stack Engineer & AI-First Solutions Architect
+10+ years architecting resilient multi-tenant SaaS platforms, enterprise workflow automation hubs, and quantitative trading systems. For the past 2+ years, operating 100% using AI tools and autonomous coding agents with zero manual coding.`,
+
+    'ai-workflow': `100% AI-Augmented Engineering Methodology (2023 — Present):
+  • Zero Manual Coding: For the past 2 years, all production code, schemas, and pipelines are built exclusively using AI tools and autonomous coding agents.
+  • Spec-Driven Architecture: Formal interface specifications, strict tenant scoping contracts, and domain boundary design.
+  • Agentic Loop & Tooling: Model Context Protocol (MCP) servers, Claude 3.5, OpenAI, prompt-chaining, and automated code reviews.
+  • Continuous Automated Verification: Every module is verified via automated test loops (Pest, PHPUnit, Playwright, TypeScript compilation).
+  • Impact: 10x delivery speed, zero architectural debt, and enterprise-grade resilience.`,
 
     skills: `Core Capabilities:
-  • <span style="color:#06b6d4;">Multi-Tenant SaaS & Cloud:</span> Laravel 12, Stancl Tenancy (Single-DB), Filament v3, Inertia 2 + React, Redis Horizon
-  • <span style="color:#8b5cf6;">Enterprise .NET & Backends:</span> ASP.NET Core (.NET 6), ASP.NET Zero / ABP, C#, EF Core, MSSQL, Hangfire, GoCardless
+  • <span style="color:#06b6d4;">AI-First & Agentic Systems:</span> 100% AI-Driven Development (2+ Yrs), Zero Manual Coding, MCP Servers, Claude API, OpenAI Agent Loops
+  • <span style="color:#8b5cf6;">Multi-Tenant SaaS & Cloud:</span> Laravel 12, Stancl Tenancy (Single-DB), Filament v3, Inertia 2 + React, Redis Horizon
+  • <span style="color:#ec4899;">Enterprise .NET & Backends:</span> ASP.NET Core (.NET 6), ASP.NET Zero / ABP, C#, EF Core, MSSQL, Hangfire, GoCardless
   • <span style="color:#10b981;">Automation & Omnichannel ETL:</span> n8n Orchestration (100+ production workflows), Airbyte on Kubernetes, Amazon SP-API, Lightspeed
-  • <span style="color:#f59e0b;">Autonomous AI & Quant:</span> Python Algo Bots (v1, v2), WebSockets, Real-time Risk Circuit Breakers, Claude API, MCP Servers
-  • <span style="color:#ec4899;">Modern Web & Frontends:</span> Next.js 13+ App Router, TypeScript, Angular & NgRx, Tailwind CSS, Shadcn UI`,
+  • <span style="color:#f59e0b;">Autonomous AI & Quant:</span> Python Algo Bots (v1, v2), WebSockets, Real-time Risk Circuit Breakers, Risk Engine`,
 
     projects: `Featured Shipped Systems:
   1. Multi-Tenant Retail & Brand Store Core (Laravel 12, Stancl Tenancy, Inertia React, Filament v3)
@@ -228,12 +236,14 @@ Principal Full-Stack Engineer & AI / Cloud Solutions Architect
 
     stack: `Technical Arsenal:
   • Languages: C#, TypeScript, JavaScript, Python, PHP 8.3+, SQL, HTML5/CSS3
+  • AI & Agentic: Claude 3.5, OpenAI, Model Context Protocol (MCP), Spec-Driven TDD, Autonomous Coding Agents
   • Frameworks: ASP.NET Core (.NET 6), Laravel 12, Next.js, React, Angular, Inertia.js, Tailwind CSS
   • Cloud & DevOps: Docker, Kubernetes, DigitalOcean, Hetzner, Vercel, GCP Functions, GitHub Actions CI/CD
   • Storage & Data: PostgreSQL, MSSQL Server, Redis, Directus BaaS, Pimcore PIM, Metabase BI`,
 
     stats: `Engineering Metrics:
   • Experience: 10+ Years Cloud & Full-Stack Architecture
+  • AI-First Delivery: 100% AI-Driven with Zero Manual Coding (Past 2+ Years)
   • Shipped Systems: 15+ Enterprise Commercial & Client Platforms
   • Production Workflows: 100+ Active n8n Pipelines & Automated ETL Jobs
   • GitHub (@nimeshvaghasiya): Sandbox, experiment lab, and open-source explorations
@@ -843,6 +853,16 @@ Nimesh built quantitative trading systems (TradingBot v1 & v2) in <strong>Python
     if (q.includes('n8n') || q.includes('etl') || q.includes('airbyte') || q.includes('workflow') || q.includes('integration')) {
       return `<strong>Enterprise Integration & ETL Ecosystem:</strong><br>
 Nimesh architected a distributed automation hub managing over <strong>100+ production n8n workflows</strong> connecting Amazon Selling Partner API (SP-API), Lightspeed POS, and accounting ERPs. He also operates an <strong>Airbyte cluster on DigitalOcean Kubernetes</strong> for high-throughput data replication into analytics warehouses.`;
+    }
+
+    if (q.includes('zero manual') || q.includes('no manual') || q.includes('how do you work') || q.includes('ai-first') || q.includes('ai tools') || q.includes('ai workflow') || q.includes('agentic')) {
+      return `<strong>100% AI-Augmented Engineering (Past 2 Years):</strong><br>
+For the last 2+ years, Nimesh does not write boilerplate code manually. Instead, he operates as an <strong>AI-First Solutions Architect</strong> orchestrating autonomous coding agents, LLM reasoning pipelines (Claude 3.5, OpenAI), and custom Model Context Protocol (MCP) servers.<br><br>
+<strong>Production Methodology:</strong><br>
+• <em>Spec-Driven Architecture:</em> Defines domain boundaries, single-DB multi-tenancy models, and OpenAPI/TypeScript schemas upfront.<br>
+• <em>Autonomous Coding Subagents:</em> Dispatches specialized agents to generate implementations with zero manual drag.<br>
+• <em>Automated Verification Loops:</em> Continuous execution of unit/feature test suites (Pest, PHPUnit, Playwright, typecheck) to verify deterministic correctness.<br>
+• <em>10x Velocity:</em> Enables shipping complete enterprise platforms in days rather than months with zero tech debt.`;
     }
 
     if (q.includes('ai') || q.includes('mcp') || q.includes('agent') || q.includes('llm')) {

@@ -1,0 +1,6 @@
+# Robots.txt for https://nimeshvaghasiya.github.io/
+User-agent: *
+Allow: /
+
+# Canonical Sitemap
+Sitemap: https://nimeshvaghasiya.github.io/sitemap.xml
