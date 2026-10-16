@@ -207,31 +207,37 @@ function initTerminal() {
 
     whoami: `Nimesh Vaghasiya
 Principal Full-Stack Engineer & AI / Cloud Solutions Architect
-10+ years engineering resilient multi-tenant SaaS platforms, autonomous AI agent pipelines, algorithmic trading engines, and enterprise distributed integrations.`,
+10+ years architecting resilient multi-tenant SaaS platforms, enterprise workflow automation hubs, quantitative trading systems, and modern web applications across global clients.`,
 
     skills: `Core Capabilities:
-  • <span style="color:#06b6d4;">Autonomous AI & Quant:</span> Python Algo Bots (v1, v2), Claude API, OpenAI, MCP Servers, Real-time Risk Engines
-  • <span style="color:#8b5cf6;">Multi-Tenant Cloud:</span> Laravel 12, Stancl Tenancy, Filament v3, Inertia.js + React, Redis Horizon
-  • <span style="color:#10b981;">Enterprise Integration:</span> n8n Orchestration (100+ production workflows), Airbyte on Kubernetes, Google Cloud Functions
-  • <span style="color:#fbbf24;">Headless & Data:</span> Directus BaaS, Pimcore PIM/MDM, Appwrite, Metabase BI, PostgREST, PostgreSQL`,
+  • <span style="color:#06b6d4;">Multi-Tenant SaaS & Cloud:</span> Laravel 12, Stancl Tenancy (Single-DB), Filament v3, Inertia 2 + React, Redis Horizon
+  • <span style="color:#8b5cf6;">Enterprise .NET & Backends:</span> ASP.NET Core (.NET 6), ASP.NET Zero / ABP, C#, EF Core, MSSQL, Hangfire, GoCardless
+  • <span style="color:#10b981;">Automation & Omnichannel ETL:</span> n8n Orchestration (100+ production workflows), Airbyte on Kubernetes, Amazon SP-API, Lightspeed
+  • <span style="color:#f59e0b;">Autonomous AI & Quant:</span> Python Algo Bots (v1, v2), WebSockets, Real-time Risk Circuit Breakers, Claude API, MCP Servers
+  • <span style="color:#ec4899;">Modern Web & Frontends:</span> Next.js 13+ App Router, TypeScript, Angular & NgRx, Tailwind CSS, Shadcn UI`,
 
-    projects: `Featured Systems:
-  1. Multi-Tenant E-Commerce Core (Stancl Tenancy, Laravel 12, Inertia React, Filament v3)
-  2. Algorithmic Trading Systems v1 & v2 (Python, Docker, WebSockets, Risk Controls)
-  3. Enterprise Integration Hub (100+ n8n workflows, Airbyte on K8s, Amazon SP-API, Lightspeed)
-  4. AI Developer & Agent Workflows (Custom MCP Servers, Claude API, Automated Dev Tooling)
-  5. Headless Master Data & Analytics Lake (Directus, Pimcore PIM, Metabase, PostgREST)`,
+    projects: `Featured Shipped Systems:
+  1. Multi-Tenant Retail & Brand Store Core (Laravel 12, Stancl Tenancy, Inertia React, Filament v3)
+  2. My Business Tracker (MBT) SaaS (ASP.NET Core .NET 6, ASP.NET Zero, Hangfire, GoCardless Direct Debit)
+  3. Autonomous Quantitative Trading Systems (v1 & v2) (Python, Docker, WebSockets, Risk Controls)
+  4. Enterprise Workflow Automation Hub (100+ n8n workflows, Airbyte on K8s, Amazon SP-API, Lightspeed)
+  5. Amazon Seller Intelligence - Spixview (Amazon SP-API, Metabase BI, Directus BaaS, BigQuery)
+  6. StartupHire Talent Platform (Next.js 13+ App Router, TypeScript, Prisma, Tailwind, Shadcn UI)
+  7. RouteManager Fleet Dispatch (ASP.NET Core, Angular, Google Maps, WebSockets, Logistics Engine)
+  8. Windows Native Virtualization (C#, Win32 COM Interop, VirtualDesktop, Box CLI)`,
 
     stack: `Technical Arsenal:
-  • Languages: TypeScript, JavaScript, Python, PHP, C#, SQL, HTML5/CSS3
-  • Frameworks: Next.js, React, Angular, Laravel 12, ASP.NET Core, Inertia.js, Tailwind CSS
-  • Platforms & DBs: PostgreSQL, Redis, Directus, Pimcore, Baserow, Appwrite, Metabase, MSSQL
-  • Cloud & DevOps: Docker, Kubernetes, DigitalOcean, Hetzner, Vercel, GCP, GitHub Actions`,
+  • Languages: C#, TypeScript, JavaScript, Python, PHP 8.3+, SQL, HTML5/CSS3
+  • Frameworks: ASP.NET Core (.NET 6), Laravel 12, Next.js, React, Angular, Inertia.js, Tailwind CSS
+  • Cloud & DevOps: Docker, Kubernetes, DigitalOcean, Hetzner, Vercel, GCP Functions, GitHub Actions CI/CD
+  • Storage & Data: PostgreSQL, MSSQL Server, Redis, Directus BaaS, Pimcore PIM, Metabase BI`,
 
-    stats: `GitHub Statistics (@nimeshvaghasiya):
-  • Public Repositories: 184+
-  • Active In: Distributed Systems, Automation, AI Agents, Full-Stack Architecture
-  • Availability: Open for Principal / Staff Roles & Architecture Advisory`,
+    stats: `Engineering Metrics:
+  • Experience: 10+ Years Cloud & Full-Stack Architecture
+  • Shipped Systems: 15+ Enterprise Commercial & Client Platforms
+  • Production Workflows: 100+ Active n8n Pipelines & Automated ETL Jobs
+  • GitHub (@nimeshvaghasiya): Sandbox, experiment lab, and open-source explorations
+  • Availability: Open for Principal / Staff Solutions Architect Roles & Advisory`,
 
     contact: `Direct Contact:
   • Email: <a href="mailto:nimesh.vaghasiya95@live.com" style="color:#06b6d4; text-decoration:underline;">nimesh.vaghasiya95@live.com</a>
@@ -239,10 +245,10 @@ Principal Full-Stack Engineer & AI / Cloud Solutions Architect
   • X / Twitter: <a href="https://x.com/nimeshvaghasiya" target="_blank" style="color:#06b6d4; text-decoration:underline;">@nimeshvaghasiya</a>`,
 
     hire: `Engagement Options:
-  • Principal / Lead Solutions Architect (Remote Global)
-  • Enterprise SaaS & Multi-Tenancy Architecture
-  • Autonomous AI & Quantitative Systems Design
-  • Enterprise Workflow Automation & ETL Pipeline Modernization
+  • Principal / Staff Solutions Architect (Remote Global)
+  • Enterprise Multi-Tenant SaaS & Cloud Platform Architecture
+  • Automated ETL & Omnichannel Integration (n8n, Airbyte, Amazon SP-API)
+  • Algorithmic Trading Systems & Autonomous AI Agent Workflows
   Email directly: <span style="color:#06b6d4;">nimesh.vaghasiya95@live.com</span>`
   };
 
@@ -361,7 +367,7 @@ function showToast(message) {
    ========================================================================== */
 const PROJECT_BLUEPRINTS = {
   multitenant: {
-    title: 'Multi-Tenant E-Commerce Cloud Platform',
+    title: 'Multi-Tenant Retail & Brand Store Core',
     badge: 'Enterprise Architecture & Cloud SaaS',
     overview: 'Engineered a modern single-database multi-tenant platform architected for rapid multi-brand e-commerce provisioning, unified cross-brand inventory tracking, and isolated administrative panels.',
     specs: [
@@ -379,6 +385,28 @@ class BrandResource extends Resource {
         return parent::getEloquentQuery()
             ->where('tenant_id', tenant('id'))
             ->with(['catalogs', 'channels']);
+    }
+}`
+  },
+  mbt: {
+    title: 'My Business Tracker (MBT) Enterprise SaaS Platform',
+    badge: 'Enterprise Multi-Tenant Cloud SaaS',
+    overview: 'Engineered an enterprise multi-tenant financial tracking & ERP platform with ASP.NET Core (.NET 6), ABP / ASP.NET Zero, GoCardless direct debit processing, EDI file parsing, and recurring background job reconciliation.',
+    specs: [
+      { label: 'Architecture Framework', value: 'ASP.NET Core (.NET 6) with ABP / ASP.NET Zero multi-tenancy & Entity Framework Core' },
+      { label: 'Payment Gateway', value: 'GoCardless Direct Debit API for automated recurring collections & customer mandates' },
+      { label: 'Background Processing', value: 'Hangfire cluster with Redis backing for scheduled billing runs and ledger reconciliation' },
+      { label: 'Database & Security', value: 'MSSQL Server with multi-tenant schema partitioning, audit logs, and transaction ledgers' },
+      { label: 'Client Application', value: 'Progressive Web App (PWA) with responsive dashboard, Metronic UI, and offline tolerance' }
+    ],
+    codeSnippet: `// Recurring Payment Dispatch with Hangfire & GoCardless
+public async Task ProcessDirectDebitBatchAsync(Guid tenantId, DateTime billingCycle) {
+    using (_currentTenant.Change(tenantId)) {
+        var pendingInvoices = await _invoiceRepository.GetUnpaidDirectDebitsAsync(billingCycle);
+        foreach (var inv in pendingInvoices) {
+            _backgroundJobClient.Enqueue<IPaymentAppService>(svc =>
+                svc.CreateGoCardlessPaymentAsync(inv.CustomerMandateId, inv.TotalAmount, inv.Id));
+        }
     }
 }`
   },
@@ -420,6 +448,90 @@ export async function handleAmazonSpWebhook(event) {
         quantity: payload.delta,
         timestamp: Date.now()
     }, { attempts: 5, backoff: { type: 'exponential', delay: 1000 } });
+}`
+  },
+  spixview: {
+    title: 'Amazon Seller Intelligence & Analytics Platform (Spixview)',
+    badge: 'E-Commerce Intelligence & Data Pipelines',
+    overview: 'Architected automated Amazon SP-API seller intelligence platform pulling daily order metrics, buy-box tracking, sales velocity, and profit margins into Directus BaaS and Metabase BI executive dashboards.',
+    specs: [
+      { label: 'Ingestion Engine', value: 'Amazon Selling Partner API (SP-API) with LWA token rotation and rate-limit backoff' },
+      { label: 'Headless CMS & BaaS', value: 'Directus BaaS for product attribute mapping, channel definitions, and metadata' },
+      { label: 'Business Intelligence', value: 'Metabase BI connecting to high-speed PostgreSQL reporting replicas' },
+      { label: 'Data Processing', value: 'Automated profit-after-ad-spend (POAS) calculations and inventory restock alerts' }
+    ],
+    codeSnippet: `// Amazon SP-API Order Metrics Aggregator
+export async function syncSellerMetrics(marketplaceId, sellerAuth) {
+    const spClient = new SellingPartnerApi({ ...sellerAuth, marketplaceId });
+    const orders = await spClient.callAPI({
+        operation: 'getOrders',
+        endpoint: 'orders',
+        query: { CreatedAfter: getPast24hIsoString() }
+    });
+    return await aggregateProfitMetrics(orders.payload.Orders);
+}`
+  },
+  startuphire: {
+    title: 'StartupHire Talent Acquisition & Recruitment Platform',
+    badge: 'Modern Full-Stack & Next.js Architecture',
+    overview: 'Designed and deployed modern recruitment platform for tech startups using Next.js 13+ App Router, Prisma ORM, NextAuth, and Shadcn UI, featuring live role filtering, candidate tracking, and resume management.',
+    specs: [
+      { label: 'Framework', value: 'Next.js 13+ with React Server Components, TypeScript, and edge routing' },
+      { label: 'Data Layer', value: 'Prisma ORM with PostgreSQL hosted on Supabase / Cloud infrastructure' },
+      { label: 'UI & Styling', value: 'Tailwind CSS, Shadcn UI, and Radix UI accessible primitives' },
+      { label: 'Authentication', value: 'NextAuth.js with multi-provider OAuth and role-based permissions' }
+    ],
+    codeSnippet: `// Next.js App Router Server Component & Prisma Query
+export async function JobListingFeed({ searchParams }: { searchParams: FilterParams }) {
+    const jobs = await prisma.jobPost.findMany({
+        where: {
+            published: true,
+            roleType: searchParams.type,
+            salaryMin: { gte: searchParams.minSalary || 0 }
+        },
+        include: { company: true, tags: true },
+        orderBy: { createdAt: 'desc' }
+    });
+    return <JobGrid jobs={jobs} />;
+}`
+  },
+  routemanager: {
+    title: 'RouteManager Fleet Dispatch & Logistics Routing',
+    badge: 'Fleet Logistics & Geospatial Routing',
+    overview: 'Built real-time dispatch and delivery management system enabling multi-stop route optimization, driver live location tracking, customer ETA alerts, and interactive dispatch mapping.',
+    specs: [
+      { label: 'Backend Architecture', value: 'ASP.NET Core REST APIs with real-time SignalR / WebSocket dispatch feeds' },
+      { label: 'Geospatial Optimization', value: 'Google Maps Directions API integration with dynamic waypoint reordering' },
+      { label: 'Frontend Interface', value: 'Angular SPA with interactive SVG map layers and real-time fleet telematics' },
+      { label: 'Database', value: 'MSSQL Server with spatial data types for geofenced delivery verification' }
+    ],
+    codeSnippet: `// Fleet Route Optimization Dispatch
+[HttpPost("optimize-manifest")]
+public async Task<ActionResult<RoutePlanDto>> OptimizeRoute([FromBody] ManifestRequest request) {
+    var waypoints = request.Stops.Select(s => new GeoCoordinate(s.Lat, s.Lng)).ToList();
+    var optimizedSequence = await _routingService.CalculateShortestPathAsync(request.Depot, waypoints);
+    await _hubContext.Clients.Group(request.DriverId).SendAsync("RouteUpdated", optimizedSequence);
+    return Ok(optimizedSequence);
+}`
+  },
+  desktoptools: {
+    title: 'Windows Native Virtualization & Systems Tooling',
+    badge: 'Systems Programming & Win32 COM Interop',
+    overview: 'Engineered high-performance C# Windows systems utilities interfacing with native unmanaged Win32 COM interfaces for desktop virtualization, plus secure headless enterprise Box cloud storage CLI.',
+    specs: [
+      { label: 'Systems Language', value: 'C# / .NET with P/Invoke and native COM VTable interop' },
+      { label: 'Windows Virtual Desktop', value: 'IVirtualDesktopManager native shell interface hook for seamless switching' },
+      { label: 'Enterprise Storage CLI', value: 'Headless Box API synchronization tool with token cache and chunked streaming' },
+      { label: 'Packaging', value: 'Published open-source NuGet library components and lightweight native binaries' }
+    ],
+    codeSnippet: `// Native Win32 COM Interop for Virtual Desktop
+[ComImport]
+[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+[Guid("a5cd92ff-29be-454c-8d04-d82879fb3f1b")]
+public interface IVirtualDesktopManager {
+    int IsWindowOnCurrentVirtualDesktop(IntPtr topLevelWindow, out bool onCurrentDesktop);
+    Guid GetWindowDesktopId(IntPtr topLevelWindow);
+    int MoveWindowToDesktop(IntPtr topLevelWindow, ref Guid desktopId);
 }`
   },
   aiagents: {
@@ -738,14 +850,39 @@ Nimesh architected a distributed automation hub managing over <strong>100+ produ
 Nimesh specializes in AI agent engineering, utilizing the <strong>Model Context Protocol (MCP)</strong> to allow LLMs (Claude, OpenAI) to perform deterministic codebase reasoning, execute verified unit tests, and safely query live system metrics through JSON-RPC and structured OpenAPI interfaces.`;
     }
 
+    if (q.includes('mbt') || q.includes('tracker') || q.includes('dotnet') || q.includes('.net') || q.includes('c#') || q.includes('gocardless')) {
+      return `<strong>My Business Tracker (MBT) & Enterprise .NET SaaS:</strong><br>
+Nimesh architected My Business Tracker (MBT), an enterprise multi-tenant cloud platform built with <strong>ASP.NET Core (.NET 6)</strong> and the <strong>ASP.NET Zero / ABP Framework</strong>. Key architectural highlights include automated recurring Direct Debit collections via <strong>GoCardless API</strong>, EDI transaction batch parsing, <strong>Hangfire</strong> background processing with Redis, and an Angular Progressive Web App (PWA).`;
+    }
+
+    if (q.includes('spixview') || q.includes('amazon') || q.includes('seller') || q.includes('metabase')) {
+      return `<strong>Amazon Seller Intelligence Platform (Spixview):</strong><br>
+Nimesh engineered an automated seller intelligence system integrating <strong>Amazon SP-API</strong> for real-time order fee reconciliation, buy-box tracking, sales velocity forecasting, and executive dashboards built in <strong>Metabase BI</strong> connected to <strong>Directus BaaS</strong>.`;
+    }
+
+    if (q.includes('startuphire') || q.includes('next') || q.includes('recruitment') || q.includes('prisma')) {
+      return `<strong>StartupHire Recruitment Platform:</strong><br>
+A modern talent acquisition platform built with <strong>Next.js 13+ App Router</strong>, React Server Components, <strong>Prisma ORM</strong>, NextAuth, and <strong>Tailwind CSS + Shadcn UI</strong>, featuring dynamic role indexing, candidate pipelines, and edge authentication.`;
+    }
+
+    if (q.includes('route') || q.includes('fleet') || q.includes('logistics') || q.includes('dispatch')) {
+      return `<strong>RouteManager Fleet Logistics Engine:</strong><br>
+A real-time delivery dispatch platform built with <strong>ASP.NET Core</strong> and <strong>Angular</strong>, providing multi-stop route optimization using Google Maps APIs, driver WebSocket telematics, and automated dispatch manifests.`;
+    }
+
+    if (q.includes('github') || q.includes('repo') || q.includes('fork') || q.includes('public')) {
+      return `<strong>Engineering Body of Work & GitHub:</strong><br>
+Nimesh's primary engineering body of work across his 10+ year career consists of proprietary commercial production platforms, private client infrastructure (Upwork, Adleads, Fiverr contracts), and high-throughput SaaS. His public GitHub profile serves as his experimental sandbox and research lab.`;
+    }
+
     if (q.includes('hire') || q.includes('contact') || q.includes('email') || q.includes('role') || q.includes('job') || q.includes('available')) {
       return `<strong>Engagement & Availability:</strong><br>
 Nimesh is currently available for <strong>Principal / Staff Solutions Architecture roles</strong>, enterprise SaaS advisory, and high-impact distributed systems consulting.<br><br>
-You can reach him directly at: <a href="mailto:nimesh.vaghasiya95@live.com" style="color:var(--accent-cyan); text-decoration:underline;">nimesh.vaghasiya95@live.com</a> or connect on <a href="https://github.com/nimeshvaghasiya" target="_blank" style="color:var(--accent-cyan); text-decoration:underline;">GitHub (184+ Repos)</a>.`;
+You can reach him directly at: <a href="mailto:nimesh.vaghasiya95@live.com" style="color:var(--accent-cyan); text-decoration:underline;">nimesh.vaghasiya95@live.com</a> or connect on <a href="https://github.com/nimeshvaghasiya" target="_blank" style="color:var(--accent-cyan); text-decoration:underline;">GitHub Lab</a>.`;
     }
 
     return `<strong>System Architecture Summary:</strong><br>
-Nimesh Vaghasiya is a Principal Full-Stack Engineer & Cloud Solutions Architect with 10+ years of experience engineering multi-tenant platforms (Laravel 12, Stancl, Inertia React), autonomous AI agents & algorithmic trading bots (Python, Docker, MCP), and distributed ETL hubs (100+ n8n workflows, Airbyte on K8s).<br><br>
-Feel free to ask about his <em>multi-tenant platform</em>, <em>trading bots</em>, <em>ETL pipelines</em>, or <em>how to get in touch</em>!`;
+Nimesh Vaghasiya is a Principal Full-Stack Engineer & Cloud Solutions Architect with 10+ years of experience engineering multi-tenant platforms (Laravel 12 & Stancl Tenancy, ASP.NET Core .NET 6 & MBT), autonomous AI agents & quant trading bots (Python, Docker, MCP), and distributed ETL hubs (100+ n8n workflows, Airbyte on K8s).<br><br>
+Feel free to ask about <em>My Business Tracker (MBT)</em>, <em>multi-tenant retail core</em>, <em>algorithmic trading bots</em>, <em>Amazon SP-API pipelines</em>, or <em>how to get in touch</em>!`;
   }
 }
