@@ -77,10 +77,12 @@ function initNeuralCanvas() {
       }
     }
 
-    draw() {
+    draw(isLight) {
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(34, 211, 238, ${this.baseAlpha})`;
+      ctx.fillStyle = isLight 
+        ? `rgba(2, 132, 199, ${this.baseAlpha * 0.75})` 
+        : `rgba(34, 211, 238, ${this.baseAlpha})`;
       ctx.fill();
     }
   }
@@ -91,10 +93,11 @@ function initNeuralCanvas() {
 
   function animate() {
     ctx.clearRect(0, 0, width, height);
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
 
     for (let i = 0; i < particles.length; i++) {
       particles[i].update();
-      particles[i].draw();
+      particles[i].draw(isLight);
 
       for (let j = i + 1; j < particles.length; j++) {
         const dx = particles[i].x - particles[j].x;
@@ -106,7 +109,9 @@ function initNeuralCanvas() {
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(139, 92, 246, ${alpha})`;
+          ctx.strokeStyle = isLight 
+            ? `rgba(124, 58, 237, ${alpha * 0.8})` 
+            : `rgba(139, 92, 246, ${alpha})`;
           ctx.lineWidth = 0.8;
           ctx.stroke();
         }
@@ -667,14 +672,46 @@ function initThemeToggle() {
   const toggleBtn = document.getElementById('theme-toggle-btn');
   if (!toggleBtn) return;
 
+  const sunIcon = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="5"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+  </svg>`;
+
+  const moonIcon = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+  </svg>`;
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('portfolio-theme', theme);
+    if (theme === 'light') {
+      toggleBtn.innerHTML = moonIcon;
+      toggleBtn.setAttribute('title', 'Switch to Dark Theme');
+      toggleBtn.setAttribute('aria-label', 'Switch to Dark Theme');
+    } else {
+      toggleBtn.innerHTML = sunIcon;
+      toggleBtn.setAttribute('title', 'Switch to Light Theme');
+      toggleBtn.setAttribute('aria-label', 'Switch to Light Theme');
+    }
+    const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+    if (themeColorMeta) {
+      themeColorMeta.setAttribute('content', theme === 'light' ? '#f8fafc' : '#07090e');
+    }
+  }
+
   const currentTheme = localStorage.getItem('portfolio-theme') || 'dark';
-  document.documentElement.setAttribute('data-theme', currentTheme);
+  applyTheme(currentTheme);
 
   toggleBtn.addEventListener('click', () => {
     const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
-    const nextTheme = isDark ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', nextTheme);
-    localStorage.setItem('portfolio-theme', nextTheme);
+    applyTheme(isDark ? 'light' : 'dark');
   });
 }
 
