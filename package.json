@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "python -m http.server 4321",
     "dev": "python -m http.server 4321",
-    "build": "node -e \"const fs=require('fs'); ['dist','dist/css','dist/js'].forEach(d=>!fs.existsSync(d)&&fs.mkdirSync(d,{recursive:true})); fs.copyFileSync('index.html','dist/index.html'); fs.copyFileSync('css/style.css','dist/css/style.css'); fs.copyFileSync('js/app.js','dist/js/app.js'); fs.cpSync('assets','dist/assets',{recursive:true});\" && tar -zcvf archive.tar.gz dist/*",
+    "build": "node -e \"const fs=require('fs'); ['dist','dist/css','dist/js'].forEach(d=>!fs.existsSync(d)&&fs.mkdirSync(d,{recursive:true})); fs.copyFileSync('index.html','dist/index.html'); fs.copyFileSync('css/style.css','dist/css/style.css'); fs.copyFileSync('js/app.js','dist/js/app.js'); fs.cpSync('assets','dist/assets',{recursive:true}); if(fs.existsSync('sitemap.xml')) fs.copyFileSync('sitemap.xml','dist/sitemap.xml'); if(fs.existsSync('robots.txt')) fs.copyFileSync('robots.txt','dist/robots.txt');\" && tar -zcvf archive.tar.gz dist/*",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "test": "echo \"No tests specified\" && exit 0"

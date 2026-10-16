@@ -1,9 +1,11 @@
 # Nimesh Vaghasiya — Solutions Architect & Principal Full-Stack Engineer
 
-> **Architecting Resilient Multi-Tenant Cloud Ecosystems, Enterprise SaaS, Quantitative Trading Systems & High-Throughput Automation.**
+> **Architecting Resilient Multi-Tenant Cloud Ecosystems, Enterprise SaaS, Quantitative Trading Systems & 100% AI-Augmented Engineering.**
 
 [![Portfolio](https://img.shields.io/badge/Live_Portfolio-nimeshvaghasiya.github.io-06b6d4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://nimeshvaghasiya.github.io/)
+[![AI-First Engineering](https://img.shields.io/badge/Methodology-100%25_AI--First_(2+_Yrs)-3b82f6?style=for-the-badge&logo=openai&logoColor=white)](https://nimeshvaghasiya.github.io/#hero)
 [![Systems](https://img.shields.io/badge/Production_Systems-15+_Shipped-8b5cf6?style=for-the-badge&logo=serverfault&logoColor=white)](https://nimeshvaghasiya.github.io/#projects)
+[![SEO & Sitemap](https://img.shields.io/badge/SEO-Optimized_%26_Indexed-10b981?style=for-the-badge&logo=google&logoColor=white)](https://nimeshvaghasiya.github.io/sitemap.xml)
 [![Email](https://img.shields.io/badge/Contact-nimesh.vaghasiya95%40live.com-10b981?style=for-the-badge&logo=mail.ru&logoColor=white)](mailto:nimesh.vaghasiya95@live.com)
 [![X](https://img.shields.io/badge/X%20%2F%20Twitter-%40nimeshvaghasiya-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/nimeshvaghasiya)
 
@@ -12,6 +14,9 @@
 ## ⚡ Executive Overview
 
 Senior engineering leader and solutions architect with over a decade (10+ years) of hands-on experience designing, scaling, and operating mission-critical enterprise platforms. Specializing in **multi-tenant cloud architecture**, **enterprise .NET & Laravel SaaS**, **autonomous quantitative trading systems**, and **high-throughput distributed ETL & event-driven workflows**.
+
+### 🤖 100% AI-First Engineering Paradigm (Past 2+ Years)
+For the past 2+ years (2023–Present), **100% of my architecture, implementation, refactoring, and infrastructure engineering is executed using AI tools and autonomous coding agents with zero manual boilerplate coding**. By functioning as an Agentic Systems Orchestrator—defining formal architectural specifications, domain models, and automated test loops—I direct specialized LLM subagents and Model Context Protocol (MCP) toolchains to produce production-grade, highly verified software at **10x delivery velocity**.
 
 > **Note on Engineering Deliverables:** My primary engineering body of work is in proprietary commercial platforms, enterprise SaaS, and private client infrastructure (Upwork, Adleads, Fiverr contracts). My public GitHub profile serves as my sandbox, experiment lab, and open-source explorations.
 
